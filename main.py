@@ -40,7 +40,6 @@ def analyze_libraries():
 # Запис результатів у файл
 def write_results_to_file(unused_libraries, file_path):
     with open(file_path, "w", encoding="utf-8") as f:
-        f.write("Unused libraries:\n")
         f.write("\n".join(unused_libraries))
 
 if __name__ == "__main__":
